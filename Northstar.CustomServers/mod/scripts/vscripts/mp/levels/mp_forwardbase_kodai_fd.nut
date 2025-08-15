@@ -18,6 +18,9 @@ void function initFrontierDefenseData()
 	AddFDCustomTitanStart( < -3580, 1985, 1012 >, < 0, 0, 0 > )
 	AddFDCustomTitanStart( < -1721, 218, 988 >, < 0, 180, 0 > )
 
+	AddStationaryAIPosition( < 71, -3578, 820 >, eStationaryAIPositionTypes.MORTAR_TITAN )
+	//the original seems to be inaccessible by AI, likely a navmesh issue after way too much testing.
+
 	/*
 	 __      __                 _
 	 \ \    / /__ _ __ __ ___  / |
@@ -257,8 +260,8 @@ void function initFrontierDefenseData()
 	WaveSpawn_InfantrySpawn( wave4, "Stalker", < 1935, 3727, 931 >, 0.0, "", 0.4 )
 	WaveSpawn_InfantrySpawn( wave4, "Stalker", < 2111, 3295, 939 >, 0.0, "", 0.9 )
 	WaveSpawn_InfantrySpawn( wave4, "Stalker", < 1087, 3863, 931 >, 0.0, "", 0.9 )
-	WaveSpawn_TitanSpawn( wave4, "Mortar", < 2475, -3544, 810 >, 90, "", 0.5, "fd_waveTypeTitanMortar" )
-	WaveSpawn_TitanSpawn( wave4, "Mortar", < 2821, -2936, 827 >, -140, "", 1.3 )
+	WaveSpawn_TitanSpawn( wave4, "Mortar", < 2490, -3524, 803 >, 90, "", 0.5, "fd_waveTypeTitanMortar" )
+	WaveSpawn_TitanSpawn( wave4, "Mortar", < 2904, -2906, 838 >, -140, "", 1.3 )
 	WaveSpawn_TitanSpawn( wave4, "Scorch", < 2665, 4456, 960 >, -140, "", 1.0 )
 	WaveSpawn_TitanSpawn( wave4, "Scorch", < 3123, 4202, 954 >, -140, "", 1.2 )
 	WaveSpawn_TitanSpawn( wave4, "Ion", < 1324, 4820, 937 >, -90, "", 0.9 )
